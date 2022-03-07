@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div style="background-color: rgb(10*i, 25*i, 75*i); width: 20px*i; height:20px*i;"></div>
+    <script>
+        //alert("Merhaba");
+        // var sonuc=confirm("Emin misiniz?");
+        // alert(sonuc);
+        // var sayi= parseInt(prompt("Sayı giriniz"));
+       
+        for(let i=0;i<10;i++)
+        {
+            document.writeln(i+"<br/>");
+        }
+
+        while (true)
+        {
+            document.writeln("Döngüden çık");
+            break;
+        }
+
+        do
+        {
+            document.writeln("En az bir kere çalıştı");
+        }
+        while(false);
+
+
+        //Soru1:Kullanıcının girdiği bir string ifadeyi ekrana 5 kere h1 etiketiyle yazınız.
+
+
+        var ifade=prompt("Bir ifade giriniz.");
+
+        for(let i=0;i<5;i++)
+        {
+            document.writeln("<h1><i>"+ifade+"</i></h1>");
+        }
+
+        //Soru2:kullanıcının girdiği sayı kadar iç içe kutu oluşturunuz farklı renklerde.
+
+        var sayi=prompt("Bir sayı giriniz.");
+
+        var strDiv="..."
+
+        for(let i=1;i<sayi;i++)
+        {
+            strDiv="<div style='border:1px solid ;width:"+i*50+"px; height:"+i*50+"px; background-color:rgb("+i*20+","+i*20+","+i*20+")'>" +strDiv + "</div>";
+        }
+
+        document.writeln(strDiv);
+
+    </script>
+</body>
+</html>

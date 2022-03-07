@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Şart İfadeleri
+        //İf-else kullanımı
+        //switch-case
+
+        let sayi=10;
+        if(sayi>10)
+        {
+            document.writeln("sayi 10'dan büyük");
+        }
+        else if (sayi<10)
+            document.writeln("Sayi 10dan küçük");
+        else
+        {
+            document.writeln("Sayı 10'a eşit");
+        }
+        //Soru:ikinci dereceden denklemlerin köklerini inceleyen progamı yazınız.
+
+        document.writeln("<br>")
+
+        let a;
+        let b;
+        let c;
+
+        a=2;
+        b=4;
+        c=2;
+        
+        let delta=(b*b)-(4*a*c);
+        
+        if(delta>0)
+        {
+            document.writeln("İki kök vardır");
+        }
+        else if (delta==0)
+        {
+            document.writeln("Çakışık iki kök vardır");
+        }
+        else
+        {
+            document.writeln("Reel kök yoktur.");
+        }
+
+        //2-Switch-case
+        //Son seçenekte break kullanma zorunluluğu yoktur.Default en sonra olmak zorunda değildir.
+
+        document.writeln("<br>")
+
+        let gün=6;
+        switch(gün)
+        {
+            case 1:
+                document.writeln("Pazartesi");
+            break;
+            case 2:
+                document.writeln("Salı");
+            break;
+            case 3:
+                document.writeln("Çarşamba");
+            break;
+            case 4:
+                document.writeln("Perşembe");
+            break;
+            case 5:
+                document.writeln("Cuma");
+            break;
+            case 6:
+                document.writeln("Cumartesi");
+            break;
+            case 7:
+                document.writeln("Pazar");
+            break;
+            default:
+                document.writeln("1-7 Arası Tanımlı...");
+        }
+
+        document.writeln("<br>")
+        
+        let secim=1;
+        switch(secim)
+        {
+            case 1:
+            case 2:
+                document.writeln("1-2");
+            break;
+            case 3:
+            case 4:
+                document.writeln("3-4");
+            break;
+        }
+
+        document.writeln("<br>")
+
+        let secenek=3;
+        switch(secenek)
+        {
+            case 1:
+                document.writeln("bir")
+            case 2:
+                document.writeln("iki");
+            case 3:
+                document.writeln("uc")
+            case 4:
+                document.writeln("dort");
+        }
+
+        document.writeln("<br>")
+
+        //Özel Kullanım
+        let s = 2;
+        switch(true)
+        {
+            case s>5:
+                document.writeln("buyuk")
+                break;
+            case s<5:
+                document.writeln("kucuk")
+                break;
+        }
+
+        
+    </script>
+</body>
+</html>

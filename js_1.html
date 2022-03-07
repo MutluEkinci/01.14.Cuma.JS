@@ -1,0 +1,87 @@
+<!--
+        java:Programlama dilidir.
+        Javascript:Browser tarafından yorumlanır. 
+    -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sayi=12;
+        document.writeln(sayi);
+        
+        var sayi2=0.1;
+        var sayi3=0.2;
+        document.writeln(sayi2+sayi3);
+
+        //Aynı değişken iki kere tanımlanabilir.Önerilmez.
+        var ad="cevdet";
+        var ad; //="selami";
+        document.writeln(ad);
+
+        document.writeln("<br/>");
+
+        //Javasript değişken tanımlamaları;
+        //1-Globally scoped:eğer bir değişkenin önüne var yazılmazsa... 
+        //2-Local scoped:Değişkenin önüne var yazılırsa...
+        //3-Block scoped(es6): 
+
+        arabaMarka="Ferrari";
+        document.writeln(arabaMarka);
+
+        document.writeln("<br/>");
+
+        var $="değişken";
+        document.writeln($);
+        
+        document.writeln("<br/>");
+
+        //3-Block scoped(ES6) =>let,const
+
+        // Aynı adlı iki değişken olamaz
+        let enBuyukSayi=12;
+        // let enBuyukSayi;
+
+        //Scope içinde tanımlanan let scope dışında kullanılamaz...
+        {
+            //let number=122;
+            var number=122;
+        }
+        document.writeln(number);
+
+        //const ile let arasındaki fark
+        //const: bir kere tanımlayınca bir daha değiştirilemez.
+        const pi=3.14;
+        // pi=3; yanlış
+
+        document.writeln("<br/>")
+        
+        //bu şekilde de kullanılamaz.Tanımlandığında değeri atanmalı...
+        // const e;
+        // e=2.7; yapılamaz!!!
+
+        let katsayi=5;
+        katsayi=3;
+        document.writeln(katsayi);
+
+        let xyz;
+        xyz="xyz";
+        document.writeln(xyz);
+
+        //const
+        //block içinde tanımlanan const block dışında kullanılamaz.tanımsız olur.
+        {
+             const degisken="d1";
+        }
+        // document.writeln(degisken);
+
+        
+    </script>
+</body>
+</html>
